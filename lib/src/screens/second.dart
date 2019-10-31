@@ -9,6 +9,10 @@ class Second extends StatelessWidget {
       appBar: AppBar(
         title: Text("Segunda pantalla"),
       ),
+      body: Center(
+        child: RaisedButton(child: Text("Ir atrás"),
+            onPressed: () {Navigator.pop(context);}),
+      ),
     );
   }
 }
